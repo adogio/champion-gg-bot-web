@@ -14,18 +14,9 @@ export default (props) => {
             component: Root,
             routes: [
                 {
-                    component: () => <div>Path = /</div>,
+                    component: Pages.index,
                     exact: true,
                     path: '/',
-
-                },
-                {
-                    component: () => <div>Path = /home</div>,
-                    path: '/home',
-                },
-                {
-                    component: () => <div>404</div>,
-                    path: '*',
                 },
             ],
         },
