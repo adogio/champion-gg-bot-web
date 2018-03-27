@@ -11,6 +11,8 @@ import * as Lambda from '../lambda/import';
 
 import Config from '../config/config';
 
+import '../style/index.sass';
+
 export interface IProps {
 
 }

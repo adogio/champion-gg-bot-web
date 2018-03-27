@@ -33,7 +33,7 @@
         "css-loader": "^0.28.10",
         "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "1.1.1",
-        "ghoti-cli": "^2.2.5",
+        "ghoti-cli": "^2.2.6",
         "html-webpack-plugin": "^2.30.1",
         "mocha": "^5.0.1",
         "node-sass": "^4.7.2",
