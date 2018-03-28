@@ -53,6 +53,9 @@ let config = {
         new CopyWebpackPlugin([{
             from: FAVICON_DIR,
             to: BUILD_DIR,
+        }, {
+            from: LITEJS_DIR,
+            to: BUILD_DIR,
         }], {}),
         new ExtractTextWebpackPlugin("bundle.css"),
         new UglifyJSPlugin()

@@ -30,8 +30,13 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
         return (<div className="ghoti-contain">
             <div className="full-page f">
                 <div className="g">
-                    <div>
-                        <img src={require('../../public/res/championgg.png')} />
+                    {/* <div className="chat" >
+                        <div className="waver" id="user" >123</div>
+                        <img className="user" src={require('../../public/res/user.jpg')} />
+                    </div> */}
+                    <div className="chat">
+                        <img className="cgb" src={require('../../public/res/championgg.png')} />
+                        <div className="waver" id="cgb" ></div>
                     </div>
                     <div>
                         Champion <span className="square" >BOT</span>
@@ -39,17 +44,7 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
                     <a href="https://discordapp.com/api/oauth2/authorize?client_id=427003334260555781&permissions=0&scope=bot">Invite Champion <span className="small-square" >BOT</span> to your server</a>
                 </div>
             </div>
-            <div>
-                Try:
-                <ul>
-                    <li>Hi</li>
-                    <li>Help</li>
-                    <li>Mid Zed</li>
-                    <li>Top Sion</li>
-                    <li>Sup Nami</li>
-                </ul>
-            </div>
-        </div>);
+        </div >);
     }
 }
 
