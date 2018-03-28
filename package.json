@@ -4,7 +4,7 @@
     "description": ":happy: web for championggbot",
     "private": false,
     "scripts": {
-        "build": "webpack --config webpack.config.js",
+        "build": "webpack --config webpack.server.js",
         "component": "ghoti component -a",
         "feature": "ghoti feature -a",
         "func": "ghoti func -a",
@@ -14,7 +14,7 @@
         "postinstall": "ghoti post -a react-ssr",
         "start": "webpack-dev-server --config webpack.dev.js --open",
         "deploy": "npm run build && tsc",
-        "server": "node ./dist/render/service.js",
+        "server": "node ./dist/server/bundle.js",
         "test": "mocha"
     },
     "author": "WMXPY",
