@@ -17,7 +17,7 @@ export default (props) => {
                     component: Pages.index,
                     exact: true,
                     path: '/',
-                },
+                }
             ],
         },
     ];

@@ -27,8 +27,18 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
     }
 
     public render() {
-        return (<div>
-            <span>Hello, PageGhotiIndex!</span>
+        return (<div className="ghoti-contain">
+            <div className="full-page f">
+                <div className="g">
+                    <div>
+                        <img src={require('../../public/res/championgg.png')} />
+                    </div>
+                    <div>
+                        Champion <span className="square" >BOT</span>
+                    </div>
+                    <a href="https://discordapp.com/api/oauth2/authorize?client_id=427003334260555781&permissions=0&scope=bot">Invite Champion <span className="small-square" >BOT</span> to your server</a>
+                </div>
+            </div>
         </div>);
     }
 }
