@@ -1,25 +1,26 @@
-let user = document.getElementById('user');
 let cgb = document.getElementById('cgb');
 
-function t(where, text, callback) {
+function t(id, text, callback) {
     let currentText = 0;
     let target = text.length;
-    where.innerHtml = "";
+    document.getElementById(id).innerText = "";
     a();
 
     function a() {
         setTimeout(() => {
-            console.log(where.innerHtml);
-            where.innerHtml = where.innerHtml + text.substring(currentText, currentText + 1);
+            console.log(document.getElementById(id).innerText);
+            let target = document.getElementById('user').innerText + text.substring(currentText, currentText + 1);
+            document.getElementById(id).innerText = target;
+            console.log(target);
             if (currentText++ >= target) {
                 callback();
             } else {
                 a();
             }
-        }, 100);
+        }, 1000);
     }
 }
 
-t(user, "opopo", () => {
+t("user", "opopo", () => {
     console.log('done');
 })

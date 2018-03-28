@@ -12,6 +12,7 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const BUILD_DIR = path.resolve(__dirname, 'dist', 'server');
 const APP_DIR = path.resolve(__dirname, 'render');
 const FAVICON_DIR = path.resolve(__dirname, 'public', 'favicon.png');
+const LITEJS_DIR = path.resolve(__dirname, 'public', 'lite.js');
 
 let config = {
     entry: APP_DIR + "/service.ts",
