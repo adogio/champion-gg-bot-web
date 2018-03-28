@@ -3,6 +3,9 @@
 .full-page
     height: 100%
 
+.centered
+    text-align: center
+
 .f
     display: flex
     flex-direction: row
@@ -10,25 +13,25 @@
     align-items: center
 
 .g
-    padding: 30px
+    padding: 3rem
     flex: 1
     font-family: $font
-    font-size: 50px
+    font-size: 3rem
     text-align: center
     .small-square
         background-color: #7289da
         color: $white
-        border-radius: 6px
-        padding: 2px 5px 2px 5px
-        font-size: 20px
+        border-radius: 0.6rem
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem
+        font-size: 1.5rem
     .square 
         background-color: #7289da
         color: $white
-        border-radius: 10px
-        padding: 3px 10px 3px 10px
-        font-size: 40px
+        border-radius: 1rem
+        padding: 0.3rem 0.8rem 0.3rem 0.8rem
+        font-size: 2.5rem
     a
-        font-size: 25px
+        font-size: 2rem
         color: $navy
         text-decoration: none
         background: 0
@@ -37,3 +40,16 @@
         color: $navy
     a:hover
         color: $orange
+
+@media #{$media-phone}
+    .g
+        padding: 2rem
+        font-size: 2rem
+        .small-square
+            border-radius: 0.4rem
+            font-size: 0.6rem
+        .square 
+            border-radius: 0.6rem
+            font-size: 1.8rem
+        a
+            font-size: 0.8rem

@@ -39,6 +39,16 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
                     <a href="https://discordapp.com/api/oauth2/authorize?client_id=427003334260555781&permissions=0&scope=bot">Invite Champion <span className="small-square" >BOT</span> to your server</a>
                 </div>
             </div>
+            <div>
+                Try:
+                <ul>
+                    <li>Hi</li>
+                    <li>Help</li>
+                    <li>Mid Zed</li>
+                    <li>Top Sion</li>
+                    <li>Sup Nami</li>
+                </ul>
+            </div>
         </div>);
     }
 }
