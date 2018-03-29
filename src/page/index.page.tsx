@@ -11,6 +11,8 @@ import * as Lambda from '../lambda/import';
 
 import Config from '../config/config';
 
+import Flier from 'flier';
+
 import '../style/index.sass';
 
 export interface IProps {
@@ -28,11 +30,14 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
 
     public render() {
         return (<div className="ghoti-contain">
-            <Component.flier text="champion bot" />
             <div className="full-page f">
                 <div className="g">
                     <div className="chat">
-                        <img className="cgb" src={require('../../public/res/championgg.png')} />
+                        <div style={{ margin: 'auto', width: "9rem" }}>
+                            <Flier text="champion bot" width={9} height={9} unit="rem" option="children">
+                                <img className="cgb" src={require('../../public/res/championgg.png')} />
+                            </Flier>
+                        </div>
                         <div className="waver" id="user" ></div>
                     </div>
                     <div>

@@ -21,7 +21,7 @@ export default function (route, data): string {
                 <meta name="description" content="Invite Champion <Bot> to your discord server" />
                 <meta name="keywords" content="Champion League BOT discord" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="theme-color" content="#000000" />
+                <meta name="theme-color" content="#F5EFFB" />
                 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
                 <link rel="stylesheet" href="bundle.css" />
                 <title>{"Chamgpion <BOT>"}</title>

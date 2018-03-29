@@ -4,7 +4,5 @@
 * You should not edit this file by hand
 */
 
-import ComponentGhotiFlier from './flier.component';
 export {
-    ComponentGhotiFlier as flier,
 };

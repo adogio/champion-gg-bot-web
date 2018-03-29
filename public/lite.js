@@ -36,4 +36,4 @@ function c(pointer) {
         })
     }, 1000);
 }
-// c(0);
+c(0);
