@@ -28,6 +28,7 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
 
     public render() {
         return (<div className="ghoti-contain">
+            <Component.flier text="champion bot" />
             <div className="full-page f">
                 <div className="g">
                     <div className="chat">
