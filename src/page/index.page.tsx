@@ -30,13 +30,9 @@ class PageGhotiIndex extends React.Component<IProps, IState> {
         return (<div className="ghoti-contain">
             <div className="full-page f">
                 <div className="g">
-                    <div className="chat" >
-                        <div className="waver" id="user" >123</div>
-                        <img className="user" src={require('../../public/res/user.jpg')} />
-                    </div>
                     <div className="chat">
                         <img className="cgb" src={require('../../public/res/championgg.png')} />
-                        <div className="waver" id="cgb" ></div>
+                        <div className="waver" id="user" ></div>
                     </div>
                     <div>
                         Champion <span className="square" >BOT</span>

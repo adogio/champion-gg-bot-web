@@ -1,5 +1,3 @@
-let cgb = document.getElementById('cgb');
-
 function t(id, text, callback) {
     let currentText = 0;
     let target = text.length;
@@ -8,19 +6,34 @@ function t(id, text, callback) {
 
     function a() {
         setTimeout(() => {
-            console.log(document.getElementById(id).innerText);
-            let target = document.getElementById('user').innerText + text.substring(currentText, currentText + 1);
-            document.getElementById(id).innerText = target;
-            console.log(target);
+            let imp = text.substring(currentText, currentText + 1);
+            if (imp === ' ') {
+                imp = '&nbsp';
+            }
+            let targetText = document.getElementById('user').innerText + imp;
+            document.getElementById(id).innerHTML = targetText;
             if (currentText++ >= target) {
                 callback();
             } else {
                 a();
             }
-        }, 1000);
+        }, 100);
     }
 }
 
-t("user", "opopo", () => {
-    console.log('done');
-})
+let arr = ["BOt ezreal", "bottom yasuo", "Hi", "Mid Zed", "Help", "support SONA", "Sup lulu", "jg MasterYi", "JUNGLE wukong"];
+arr.sort(() => {
+    return 0.5 - Math.random();
+});
+
+function c(pointer) {
+    if (pointer === arr.length) {
+        pointer = 0;
+    }
+    setTimeout(() => {
+        t("user", arr[pointer], () => {
+            c(pointer + 1)
+        })
+    }, 1000);
+}
+c(0);
